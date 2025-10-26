@@ -190,7 +190,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-st.title("카페 AI 메뉴 추천 시스템 🤖")
+st.title("AI 메뉴 추천 시스템 🤖")
 
 # 사이드바: 사용자 입력 설정
 with st.sidebar:
@@ -205,7 +205,7 @@ with st.sidebar:
     people = st.slider("인원수", min_value=1, max_value=10, value=2)
 
     # 3. 당도 설정
-    st.subheader("3. 당도 설정 (0:無糖 ~ 4:高糖)")
+    st.subheader("3. 당도 설정 (0~ 4)")
     sweetness_range = st.slider(
         "선호 당도 범위",
         min_value=0, max_value=4, value=(1, 3)
